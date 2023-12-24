@@ -90,6 +90,8 @@ async function run() {
         const result = await productsCollection.insertOne(product)
         res.send(result)
     })
+    
+    
 
     app.post('/cart', async(req, res) =>{
       const cart = req.body
